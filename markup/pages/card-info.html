@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Мой ID</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta content="telephone=no" name="format-detection">
+<!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+<meta name="HandheldFriendly" content="true">
+<!--[if IE 8 ]><link href="%=static=%css/main_ie8%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><![endif]-->
+<!--[if IE 9 ]><link href="%=static=%css/main_ie9%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><link href="%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><!--<![endif]-->
+
+{{#if useSocialMetaTags}}
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="300" />
+    <meta property="twitter:description" content="" />
+    <link rel="image_src" href="" />
+{{/if}}
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<script>
+    (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+</script>
+<!--[if lt IE 9 ]><script src="%=static=%js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar"><![endif]-->
+
+</head>
+<body class="page" style="visibility: hidden;opacity: 0;">
+    %=symbols=%
+    {{> header/header}}
+    <div class="user card-user">
+        <div class="wrapper">
+            <div class="user__container user__container-2">
+                <div class="user__left m-bg-cont">
+                    <img src='static/img/content/user-none.svg' alt='картинка'>
+                    <div class="user__plus">
+                        {{Icon iconName='plus'}}
+                    </div>
+                </div>  
+                <div class="user__id">
+                    Ваш ID 
+                </div>
+                <div class="infouser__box infouser__card" id="copy">
+                    <span id="data">5500-0050</span> {{Icon iconName="copy"}}
+                </div>
+                <div class="user__id">
+                    Ваши данные 
+                </div>
+
+                <div class="ch">
+                    <div class="ch__item">
+                        <input type="text" placeholder="Название компании">
+                        {{Icon iconName="change"}}
+                    </div>
+                    <div class="ch__item">
+                        <input type="text" placeholder="Имя">
+                        {{Icon iconName="change"}}
+                    </div>
+                    <div class="ch__item">
+                        <input type="text" placeholder="Отчество">
+                        {{Icon iconName="change"}}
+                    </div>
+                    <div class="ch__item">
+                        <input type="text" placeholder="Фамалия">
+                        {{Icon iconName="change"}}
+                    </div>
+                    <div class="ch__item">
+                        <input type="text" placeholder="Телефон">
+                        {{Icon iconName="change"}}
+                    </div>
+                    <div class="ch__item">
+                        <input type="text" placeholder="Эл. почта">
+                        {{Icon iconName="change"}}
+                    </div>
+                </div>
+
+                <div class="ch">
+                    <div class="ch__title">
+                        Текущий пароль
+                    </div>
+                    <div class="ch__item">
+                        <input type="password" value="102001201">
+                        {{Icon iconName="change"}}
+                    </div>
+                </div>
+
+                <div class="ch">
+                    <div class="ch__title">
+                        Новый пароль
+                    </div>
+                    <div class="ch__item">
+                        <input type="password" value="">
+                        {{Icon iconName="change"}}
+                    </div>
+                </div>
+
+                <div class="ch">
+                    <div class="ch__title">
+                        Ваш тариф
+                    </div>
+                    <div class="ch__item">
+                        <a href="tarif-1.html" class="m-button-2">
+                            Минимальный
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ch__bottom">
+                    <div class="m-button-2">
+                        Сохранить
+                    </div>
+                    <div class="ch__buttons">
+                        <a href="#" data-popup="del" class="ch__button">
+                            Уадалить аккаунт
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+ 
+
+
+    
+    
+
+    {{> footer/footer}}
+
+</body>
+</html>

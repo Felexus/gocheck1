@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Мой тариф</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta content="telephone=no" name="format-detection">
+<!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+<meta name="HandheldFriendly" content="true">
+<!--[if IE 8 ]><link href="%=static=%css/main_ie8%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><![endif]-->
+<!--[if IE 9 ]><link href="%=static=%css/main_ie9%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><link href="%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><!--<![endif]-->
+
+{{#if useSocialMetaTags}}
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="300" />
+    <meta property="twitter:description" content="" />
+    <link rel="image_src" href="" />
+{{/if}}
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<script>
+    (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+</script>
+<!--[if lt IE 9 ]><script src="%=static=%js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar"><![endif]-->
+
+</head>
+<body class="page" style="visibility: hidden;opacity: 0;">
+    %=symbols=%
+    {{> header/header}}
+    
+    <div class="block__title">
+        Ваш тариф
+    </div>
+    <div class="block">
+        <div class="wrapper">
+            <div class="block__container">
+                <div class="user card-user card-user-1">
+                    <a href="card-info.html" class="user__left m-bg-cont">
+                        <img src='static/img/content/user.png' alt='картинка'>
+                    </a>
+                    <div class="user__right user__right-2">
+                        <div class="user__title">
+                            Валентин Григорьевич Распутин                         
+                        </div>
+                        <div class="user__desc">
+                            ресторан: «Соседи» 
+                        </div>
+                    </div>
+
+                    <div class="tarif">
+                        <div class="tarif__title">
+                            Минимальный
+                        </div>
+                        <div class="tarif__content">
+                            <div class="tarif__desc">
+                                Зачисления: <span>комиссия 5%</span> от суммы чаевых
+                            </div>
+                            <div class="tarif__desc">
+                                Вывод средств: <span>бесплатных</span> от 2000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tarif__button m-button disabled">
+            Выбрано
+        </div>
+    </div>
+
+ 
+
+
+    
+    
+
+    {{> footer/footer-2}}
+
+</body>
+</html>
