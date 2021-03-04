@@ -170,20 +170,40 @@ $(document).ready(function () {
 		$(this).toggleClass("active")
 		$(".card__number").toggleClass("active")
 	});
-	$(".tea__input").keydown(function() {
+	
+	$(".tea__button").click(function() {
+		var tea = +$(this).attr("data-tea");
+		var value = +$(".tea__input").val();
+		// var value1 = +value.substring(0, value.length - 1);
+		var itog = tea + value	
+		$(".tea__input").val(itog);
+		$(".tea__input span").text(itog);
+	});
+
+	$(".card__eye").click(function() {
+		$(this).toggleClass("active")
+		$(".card__number").toggleClass("active")
+	});
+	$(".tea__input").keyup(function() {
 		var val = $(".tea__input").val();
-		var val1 = +val.substring(0, val.length - 1);
-		// var val2 = +val1;
-		setTimeout(function() {
-			var val = $(".tea__input").val();
-			$(this).val(val + " ₽");
-		}, 40)
+		$(".tea__input span").text(val);
 	});
-	$(".tea__input").click(function() {
+	$(".tea__input").focus(function() {
 		$(".tea__input").val("");
+		$(".tea__input span").text("");
 	});
+	// $(".tea__input").click(function() {
+	// 	$(".tea__input").val("");
+	// 	$("div.tea__input span").text("");
+	// });
 	$(".tea__delete").click(function() {
-		$(".tea__input").val("0 ₽");
+		$(".tea__input").val("0");
+		$("div.tea__input span").text("0");
+	});
+
+    $(".rating2").click(function() {
+		$(".rating-star").addClass("active")
+        $(".rating-hide").addClass("active");
 	});
 
 	$(".infouser__card").click(function(){
@@ -196,11 +216,26 @@ $(document).ready(function () {
 	});
 
 
-	
-	
-	
 
 	
+	setInterval(function() {
+		if ($("input.tea__input").is(":focus")) {
+			$("input.tea__input").addClass("active")
+		} else {
+			$("input.tea__input").removeClass("active")
+		}
+		if ($("input.tea__input").val() == "" || $("input.tea__input").val() == "0") {
+			$("input.tea__input").removeClass("active")
+		} else {
+			$("input.tea__input").addClass("active")
+		}
+	}, 100);
+	
+
+	$(".rating2").click(function() {
+		$(".rating-star").addClass("active")
+        $(".rating-hide").addClass("active");
+	});	
 	
 
 
@@ -297,6 +332,13 @@ $(document).ready(function () {
 		var img = $(this).find("img:first-of-type").attr("src");
 		$(this).css("background-image", "url(" + img + ")");
 	});
+
+	setTimeout(function() {
+		var datepicker = $("#ui-datepicker-div").remove();
+	
+		$(".selected_date").append(datepicker);
+	}, 600);
+
 
 	
 	 

@@ -694,7 +694,7 @@ button {
             color: white;
             background: radial-gradient(156.83% 173% at 92.31% 93.88%, #F0AB48 0%, #B04DB7 55.05%, #515CD5 98.44%);
         }
-        &:last-child {
+        &:nth-child(2) {
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
@@ -704,6 +704,27 @@ button {
         }
     }
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.selected_date {
+    position: relative;
+}
+
+#ui-datepicker-div {
+    position: absolute;
+    left: 0 !important;
+    top: 100% !important;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .mb12 {
     margin-bottom: 12px !important;
 }
@@ -3436,4 +3457,217 @@ textarea {
         margin-top: 13px;
         text-align: center;
     }
+}
+.user-margin-bottom {
+    padding-bottom: 20px;
+}
+.checkbox div {
+    
+}
+
+.user__qr {
+    margin-bottom: 38px;
+}
+
+.rating-hide {
+    display: none;
+  }
+  .rating-hide.active {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+.load-button svg {
+    margin-right: 8px;
+  }
+  .load-buttons {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .load-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 4px);
+    height: 52px;
+    background: #000000;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+	
+.tea__content {
+	position: relative;
+  }
+  
+  .tea__delete {
+	position: absolute;
+	top: 20px;
+	right: 0;
+  }
+  
+  .tea__input {
+	border: none;
+	background-color: transparent;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 12px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+	font-style: normal;
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 100%;
+	text-align: center;
+	color: #475469;
+  }
+  
+  .tea__input::-webkit-input-placeholder {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 100%;
+	text-align: center;
+	color: rgba(71, 84, 105, 0.6);
+  }
+  
+  .tea__input::-moz-placeholder {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 100%;
+	text-align: center;
+	color: rgba(71, 84, 105, 0.6);
+  }
+  
+  .tea__input:-ms-input-placeholder {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 100%;
+	text-align: center;
+	color: rgba(71, 84, 105, 0.6);
+  }
+  
+  .tea__input::-ms-input-placeholder {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 100%;
+	text-align: center;
+	color: rgba(71, 84, 105, 0.6);
+  }
+  
+  .tea__input::placeholder {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 100%;
+	text-align: center;
+	color: rgba(71, 84, 105, 0.6);
+  }
+  
+  .tea__buttons {
+	margin-top: 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-right: -6px;
+	margin-bottom: 28px;
+  }
+  
+  .tea__buttons .swiper-slide {
+	width: auto;
+	margin-right: 8px;
+  }
+  
+  .tea__button {
+	margin-right: 6px;
+	-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+			flex-grow: 1;
+	height: 29px;
+	padding: 0 12px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #475469;
+	background: #F0F5F5;
+	border-radius: 50px;
+	white-space: nowrap;
+  }
+
+
+
+div.tea__input {
+  margin-top: -72px;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 34px;
+  height: 80px;
+  background: #F6F5F3;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+  
+}
+
+input.tea__input {
+    color: rgba(0, 0, 0, 0.15);
+    & + {
+        div.tea__input {
+            color: rgba(0, 0, 0, 0.15);  
+            * {
+                color: rgba(0, 0, 0, 0.15);  
+            } 
+        }
+    }
+    &.active {
+        color: rgba(0, 0, 0, 0.6);
+        & + {
+            div.tea__input {
+                color: rgba(0, 0, 0, 0.6);  
+                * {
+                    color: rgba(0, 0, 0, 0.6);  
+                } 
+            }   
+        }
+    }
+}
+
+input.tea__input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-height: 80px;
+}
+div.tea__input {
+    max-height: 80px;
+    padding-bottom: 12px;
+    padding-top: 12px;  
+    margin-top: -80px;
+}
+
+div.tea__input span {
+  opacity: 0;
+}
+div.tea__input p {
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 10px;
+  color: #475469;
 }

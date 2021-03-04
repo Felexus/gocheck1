@@ -37,7 +37,7 @@
 <body class="page" style="visibility: hidden;opacity: 0;">
     %=symbols=%
     {{> header/header}}
-    <div class="user">
+    <div class="user user-margin-bottom">
         <div class="wrapper">
             <div class="user__container">
                 <a href="card-info.html" class="user__left m-bg-cont">
@@ -57,11 +57,12 @@
 
     <div class="wrapper">
         <div class="blue__container">
+            
             <div class="tea">
                 <div class="tea__content">
-                    <input type="text" class="tea__input" value="200 ₽" maxlength="8" placeholder="0 ₽">
-                    <div class="tea__delete">
-                        {{Icon iconName="delete"}}
+                    <input type="number" class="tea__input tea-input" value="0" maxlength="8">
+                    <div class="tea__input">
+                        <span>0</span> <p>₽</p>
                     </div>
                 </div>
             </div>
@@ -87,7 +88,7 @@
                     {{Icon iconName="check"}}
                 </div>
                 <p>
-                    Согласен с условиями пользовательского соглашения и даю согласие на обработку персональных данных.
+                    Я хочу взять на себя транзакционны издержки (0.₽), чтобы сотрудник получил полную сумму
                 </p>
             </label>
             <div class="blue__title">
@@ -97,36 +98,41 @@
 
             <div class="rating2">
                 <input type="radio" id="star11" name="star"><label for="star11" class="ion-android-star rating-star">
-                    <img src='static/img/content/index-star.png' alt='картинка'>
-                    <img src='static/img/content/index-star-grey.png' alt='картинка'>
+                    <img src='static/img/content/index-star.svg' alt='картинка'>
+                    <img src='static/img/content/index-star-1.svg' alt='картинка'>
                 </label>
                 <input type="radio" id="star22" name="star"><label for="star22" class="ion-android-star rating-star">
-                    <img src='static/img/content/index-star.png' alt='картинка'>
-                    <img src='static/img/content/index-star-grey.png' alt='картинка'>
+                    <img src='static/img/content/index-star.svg' alt='картинка'>
+                    <img src='static/img/content/index-star-1.svg' alt='картинка'>
                 </label>
                 <input type="radio" id="star3" name="star"><label for="star3" class="ion-android-star rating-star">
-                    <img src='static/img/content/index-star.png' alt='картинка'>
-                    <img src='static/img/content/index-star-grey.png' alt='картинка'>
+                    <img src='static/img/content/index-star.svg' alt='картинка'>
+                    <img src='static/img/content/index-star-1.svg' alt='картинка'>
                 </label>
                 <input type="radio" id="star4" name="star"><label for="star4" class="ion-android-star rating-star">
-                    <img src='static/img/content/index-star.png' alt='картинка'>
-                    <img src='static/img/content/index-star-grey.png' alt='картинка'>
+                    <img src='static/img/content/index-star.svg' alt='картинка'>
+                    <img src='static/img/content/index-star-1.svg' alt='картинка'>
                 </label>
                 <input type="radio" id="star5" name="star"><label for="star5" class="ion-android-star rating-star">
-                    <img src='static/img/content/index-star.png' alt='картинка'>
-                    <img src='static/img/content/index-star-grey.png' alt='картинка'>
+                    <img src='static/img/content/index-star.svg' alt='картинка'>
+                    <img src='static/img/content/index-star-1.svg' alt='картинка'>
                 </label>
-                </div>
+            </div>
 
+                <div class="rating-hide">
+                    <form action="#" class="reviews__container rev-form">
+                        <div class="reviews__title">
+                            Оставьте свой отзыв
+                        </div>
+                        <textarea class="reviews__textarea" name="rev" placeholder="Напишите ваш отзыв"></textarea>
+                    </form>
+                </div>
             
 
             <div class="pay">
                 <div class="pay__button">
                     Оплатить картой
                 </div>
-                <a href="review.html" class="pay__button">
-                    Оставьте свой отзыв
-                </a>
             </div>
             
         </div>
