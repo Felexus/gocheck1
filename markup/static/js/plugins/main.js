@@ -157,14 +157,7 @@ $(document).ready(function () {
 	}
 
 
-	$(".tea__button").click(function() {
-		var tea = +$(this).attr("data-tea");
-		var value = "0 ₽"
-		var value1 = +value.substring(0, value.length - 1);
-		console.log(value1);
-		var itog = tea + value1 + " ₽"	
-		$(".tea__input").val(itog);
-	});
+	
 
 	$(".card__eye").click(function() {
 		$(this).toggleClass("active")

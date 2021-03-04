@@ -1901,14 +1901,7 @@ $(document).ready(function () {
 	}
 
 
-	$(".tea__button").click(function() {
-		var tea = +$(this).attr("data-tea");
-		var value = "0 ₽"
-		var value1 = +value.substring(0, value.length - 1);
-		console.log(value1);
-		var itog = tea + value1 + " ₽"	
-		$(".tea__input").val(itog);
-	});
+	
 
 	$(".card__eye").click(function() {
 		$(this).toggleClass("active")
@@ -1968,10 +1961,18 @@ $(document).ready(function () {
 		} else {
 			$("input.tea__input").removeClass("active")
 		}
+		if ($("input.tea__input").val() == "" || $("input.tea__input").val() == "0") {
+			$("input.tea__input").removeClass("active")
+		} else {
+			$("input.tea__input").addClass("active")
+		}
 	}, 100);
 	
 
-	
+	$(".rating2").click(function() {
+		$(".rating-star").addClass("active")
+        $(".rating-hide").addClass("active");
+	});	
 	
 
 
@@ -2068,6 +2069,13 @@ $(document).ready(function () {
 		var img = $(this).find("img:first-of-type").attr("src");
 		$(this).css("background-image", "url(" + img + ")");
 	});
+
+	setTimeout(function() {
+		var datepicker = $("#ui-datepicker-div").remove();
+	
+		$(".selected_date").append(datepicker);
+	}, 600);
+
 
 	
 	 
