@@ -52,7 +52,6 @@ $(document).ready(function () {
 			$(".cont-tab").removeClass("active");
 			$("." + href).each(function () {
 				$("." + href).addClass('active');
-				$("." + href + " input").val('');
 				$("." + href + " input").removeClass("is-focus");
 			});
 		});
